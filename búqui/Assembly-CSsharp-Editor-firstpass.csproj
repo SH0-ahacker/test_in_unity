@@ -132,40 +132,40 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UDP">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UDP/UDP.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UDP/UDP.dll</HintPath>
  </Reference>
  <Reference Include="ChannelPurchase">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
  </Reference>
  <Reference Include="UnityStore">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
  </Reference>
  <Reference Include="Editor">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
  </Reference>
  <Reference Include="Purchasing.Common">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Stores">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
  <Reference Include="FacebookStore">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
  </Reference>
  <Reference Include="Security">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
  </Reference>
  <Reference Include="winrt">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
  </Reference>
  <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>C:/Users/Cliente/Desktop/10--PASTA DO VINICIUS--01/búqui/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Cliente/Desktop/búqui/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
