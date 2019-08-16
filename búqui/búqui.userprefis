@@ -1,0 +1,19 @@
+<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\recapcha\invisivel.html">
+    <Files>
+      <File FileName="Assets\LOGINS\login_via_github.cs" Line="1" Column="1" />
+      <File FileName="Assets\LOGINS\login_via_google.cs" Line="1" Column="1" />
+      <File FileName="Assets\LOGINS\login_via_facebook.cs" Line="1" Column="1" />
+      <File FileName="Assets\LOGINS\login_via_twitter.cs" Line="1" Column="1" />
+      <File FileName="Assets\LOGINS\logins_para_novos_usuarios.cs" Line="1" Column="1" />
+      <File FileName="Assets\notes\note.txt" Line="1" Column="1" />
+      <File FileName="Assets\intro\intro.html" Line="1" Column="1" />
+      <File FileName="Assets\recapcha\invisivel.html" Line="1" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
