@@ -1,0 +1,446 @@
+/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */ #tridiv {
+  perspective: 800px;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 100%;
+}
+.face {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.scene, .shape, .face, .face-wrapper, .cr {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.scene {
+  width: 80em;
+  height: 80em;
+  top: 50%;
+  left: 50%;
+  margin: -40em 0 0 -40em;
+}
+.shape {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: 50%;
+}
+.face, .face-wrapper {
+  overflow: hidden;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+  /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+  background-size: 100% 100%!important;
+  background-position: center;
+}
+.face-wrapper .face {
+  left: 100%;
+  width: 100%;
+  height: 100%
+}
+.photon-shader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+.side {
+  left: 50%;
+}
+.cr, .cr .side {
+  height: 100%;
+}
+[class*="cylinder"] .tp {
+  transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cylinder"] .bm {
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cylinder"] .tp, [class*="cylinder"] .bm, [class*="cylinder"] .tp .photon-shader, [class*="cylinder"] .bm .photon-shader {
+  border-radius: 50%;
+}
+[class*="cylinder"] .bm {
+  top: 100%;
+}
+[class*="cuboid"] .ft, [class*="cuboid"] .bk {
+  width: 100%;
+  height: 100%;
+}
+[class*="cuboid"] .bk {
+  left: 100%;
+}
+[class*="cuboid"] .rt {
+  transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+  transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+  transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+  left: 100%;
+}
+[class*="cuboid"] .bm {
+  top: 100%;
+}
+[class*="pyramid"] .face-wrapper .face {
+  transform: rotateZ(45deg) translateX(-35.35%) translateY(35.35%);
+}
+[class*="pyramid"] .bk {
+  left: 100%;
+}
+[class*="pyramid"] .bm {
+  top: 100%;
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="pyramid"] .rt, [class*="pyramid"] .lt {
+  transform-origin: 50% 0;
+}
+[class*="prism"] .ft, [class*="prism"] .bk {
+  width: 100%;
+  height: 100%;
+}
+[class*="prism"] .bk {
+  left: 100%;
+}
+[class*="prism"] .rt {
+  transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="prism"] .lt {
+  transform: rotateY(90deg) translateX(-50%);
+}
+[class*="prism"] .bm {
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="prism"] .lt {
+  left: 100%;
+}
+[class*="prism"] .bm {
+  top: 100%;
+}
+[class*="prism"] .rt .face {
+  left: -100%;
+  transform-origin: 100% 0;
+}
+/* .cyl-1 styles */
+.cyl-1 {
+  transform:translate3D(0.25em, 0em, 2.25em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:27em;
+  height:5em;
+  margin:-2.5em 0 0 -13.5em;
+}
+.cyl-1 .tp, .cyl-1 .bm {
+  width:27em;
+  height:27em;
+}
+.cyl-1 .side {
+  width:6.187573808534049em;
+  height:5em;
+}
+.cyl-1 .s0 {
+  transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s1 {
+  transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s2 {
+  transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s3 {
+  transform: rotateY(90deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s4 {
+  transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s5 {
+  transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s6 {
+  transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s7 {
+  transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s8 {
+  transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s9 {
+  transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s10 {
+  transform: rotateY(270deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s11 {
+  transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s12 {
+  transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .s13 {
+  transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 13.475em);
+}
+.cyl-1 .face, .cyl-1 .side {
+  background-color:#FFFFFF;
+}
+/* .cub-1 styles */
+.cub-1 {
+  transform:translate3D(-4.5625em, 0em, -2.5625em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:4em;
+  height:5em;
+  margin:-2.5em 0 0 -2em;
+}
+.cub-1 .ft {
+  transform:translateZ(1.5em);
+}
+.cub-1 .bk {
+  transform:translateZ(-1.5em) rotateY(180deg);
+}
+.cub-1 .rt, .cub-1 .lt {
+  width:3em;
+  height:5em;
+}
+.cub-1 .tp, .cub-1 .bm {
+  width:4em;
+  height:3em;
+}
+.cub-1 .face {
+  background-color:#FFFFFF;
+}
+/* .cub-2 styles */
+.cub-2 {
+  transform:translate3D(6em, 0em, -2.75em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:4em;
+  height:5em;
+  margin:-2.5em 0 0 -2em;
+}
+.cub-2 .ft {
+  transform:translateZ(1.5em);
+}
+.cub-2 .bk {
+  transform:translateZ(-1.5em) rotateY(180deg);
+}
+.cub-2 .rt, .cub-2 .lt {
+  width:3em;
+  height:5em;
+}
+.cub-2 .tp, .cub-2 .bm {
+  width:4em;
+  height:3em;
+}
+.cub-2 .face {
+  background-color:#FFFFFF;
+}
+/* .pyr-1 styles */
+.pyr-1 {
+  transform:translate3D(-4.75em, 0em, -2.5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:4em;
+  height:5em;
+  margin:-2.5em 0 0 -2em;
+}
+.pyr-1 .face-wrapper {
+  width:4em;
+  height:2em;
+}
+.pyr-1 .face-wrapper .face {
+  width:4em;
+  height:4em;
+}
+.pyr-1 .ft {
+  transform:scaleZ(2.692582403567252) scaleY(2.692582403567252) rotateX(21.801409486351798deg);
+}
+.pyr-1 .bk {
+  transform:scaleZ(2.692582403567252) scaleY(2.692582403567252) rotateX(-21.801409486351798deg) rotateY(180deg);
+}
+.pyr-1 .rt {
+  transform:scaleX(2.692582403567252) scaleY(2.692582403567252) rotateZ(21.801409486351798deg) rotateY(-90deg);
+}
+.pyr-1 .lt {
+  transform:scaleX(2.692582403567252) scaleY(2.692582403567252) rotateZ(-21.801409486351798deg) rotateY(90deg);
+}
+.pyr-1 .bm {
+  width:4em;
+  height:4em;
+}
+.pyr-1 .face {
+  background-color:#FFFFFF;
+}
+/* .pyr-2 styles */
+.pyr-2 {
+  transform:translate3D(6.1875em, 0em, -2.875em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:4em;
+  height:5em;
+  margin:-2.5em 0 0 -2em;
+}
+.pyr-2 .face-wrapper {
+  width:4em;
+  height:2em;
+}
+.pyr-2 .face-wrapper .face {
+  width:4em;
+  height:4em;
+}
+.pyr-2 .ft {
+  transform:scaleZ(2.692582403567252) scaleY(2.692582403567252) rotateX(21.801409486351798deg);
+}
+.pyr-2 .bk {
+  transform:scaleZ(2.692582403567252) scaleY(2.692582403567252) rotateX(-21.801409486351798deg) rotateY(180deg);
+}
+.pyr-2 .rt {
+  transform:scaleX(2.692582403567252) scaleY(2.692582403567252) rotateZ(21.801409486351798deg) rotateY(-90deg);
+}
+.pyr-2 .lt {
+  transform:scaleX(2.692582403567252) scaleY(2.692582403567252) rotateZ(-21.801409486351798deg) rotateY(90deg);
+}
+.pyr-2 .bm {
+  width:4em;
+  height:4em;
+}
+.pyr-2 .face {
+  background-color:#FFFFFF;
+}
+/* .cyl-2 styles */
+.cyl-2 {
+  transform:translate3D(0.6875em, 0em, 4.125em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:6em;
+  height:5em;
+  margin:-2.5em 0 0 -3em;
+}
+.cyl-2 .tp, .cyl-2 .bm {
+  width:6em;
+  height:6em;
+}
+.cyl-2 .side {
+  width:1.3944608463408996em;
+  height:5em;
+}
+.cyl-2 .s0 {
+  transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s1 {
+  transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s2 {
+  transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s3 {
+  transform: rotateY(90deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s4 {
+  transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s5 {
+  transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s6 {
+  transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s7 {
+  transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s8 {
+  transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s9 {
+  transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s10 {
+  transform: rotateY(270deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s11 {
+  transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s12 {
+  transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .s13 {
+  transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 2.975em);
+}
+.cyl-2 .face, .cyl-2 .side {
+  background-color:#FFFFFF;
+}
+/* .pri-1 styles */
+.pri-1 {
+  transform:translate3D(0.625em, 0em, -2.625em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:4em;
+  height:5em;
+  margin:-2.5em 0 0 -2em;
+}
+.pri-1 .rt .face {
+  transform:rotateZ(-30.963756532073536deg);
+}
+.pri-1 .lt .face {
+  transform:rotateZ(30.963756532073536deg);
+}
+.pri-1 .ft {
+  height:5.830951894845301em;
+  transform:translateZ(-1.5em) rotateX(30.963756532073536deg);
+}
+.pri-1 .bk {
+  transform:translateZ(-1.5em) rotateY(180deg);
+}
+.pri-1 .rt, .pri-1 .lt {
+  width:3em;
+  height:5em;
+}
+.pri-1 .rt .face, .pri-1 .lt .face {
+  height:5.830951894845301em;
+}
+.pri-1 .bm {
+  width:4em;
+  height:3em;
+}
+.pri-1 .face {
+  background-color:#FFFFFF;
+}
+/* .pri-2 styles */
+.pri-2 {
+  transform:translate3D(0.625em, 0em, -5.6875em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:4em;
+  height:5em;
+  margin:-2.5em 0 0 -2em;
+}
+.pri-2 .rt .face {
+  transform:rotateZ(-30.963756532073536deg);
+}
+.pri-2 .lt .face {
+  transform:rotateZ(30.963756532073536deg);
+}
+.pri-2 .ft {
+  height:5.830951894845301em;
+  transform:translateZ(-1.5em) rotateX(30.963756532073536deg);
+}
+.pri-2 .bk {
+  transform:translateZ(-1.5em) rotateY(180deg);
+}
+.pri-2 .rt, .pri-2 .lt {
+  width:3em;
+  height:5em;
+}
+.pri-2 .rt .face, .pri-2 .lt .face {
+  height:5.830951894845301em;
+}
+.pri-2 .bm {
+  width:4em;
+  height:3em;
+}
+.pri-2 .face {
+  background-color:#FFFFFF;
+}
